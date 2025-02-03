@@ -3,7 +3,7 @@ package com.yourcompanyname.cipher;
 class CaesarCipher {
     
     // This method encrypts the input with the corresponding shift value
-    public String encrypt(String input, int shift) {
+    String encrypt(String input, int shift) {
         String cipher = "";
         for (int i = 0; i < input.length(); i++) {
             char letter = input.charAt(i);
