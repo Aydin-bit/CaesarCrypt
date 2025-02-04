@@ -25,3 +25,17 @@ For a GitHub repository it is generally recommended to use a folder "src" for al
     /java -> Java-linked code
     /com/yourcompany -> Name of the company, so that name-conflict is prevented
     /logic or /ui -> Example of how you could structure with the use of modules
+
+## bin-folder
+The bin-folder should contain the compiled java classes from the src-folder. Its Repository structure only corresponds to the package structure of the java-files in the src folder:
+
+    /project-root
+        /bin
+            /com
+                /yourcompany
+                    /logic
+                        code.class
+                    /ui
+                        code.class
+
+The bin-folder is used to seperate compiled, ready-to-use code from editable code in the src-folder. Usually this folder is not versioned by git due to the gitignore-file.
